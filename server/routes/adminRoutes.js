@@ -3,8 +3,7 @@ const router = express.Router();
 
 const path = require("path");
 const User = require(path.resolve(__dirname, "../models/User.js"));
-const Score = require("../models/Score");
-
+const Score = require(path.resolve(__dirname, "../models/Score.js"));
 router.get(
   "/users",
   async (req, res) => {
