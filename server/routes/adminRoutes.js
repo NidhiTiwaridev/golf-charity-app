@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const User = require("../models/User.js");
+const path = require("path");
+const User = require(path.join(__dirname, "../models/User.js"));
 const Score = require("../models/Score");
 
 router.get(
